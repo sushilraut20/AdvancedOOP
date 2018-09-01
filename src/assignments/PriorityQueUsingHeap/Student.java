@@ -22,8 +22,8 @@ public class Student {
 				+ ", noOfUnitsTaken=" + noOfUnitsTaken + "]";
 	}
 	
-	
-	
-	
+	public float getPriorityOfStudent() {
+		return (float)(0.7*noOfUnitsTaken + 0.3*gpa);
+	}
 
 }
