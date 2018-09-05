@@ -19,10 +19,11 @@ public class PriorityQueueTest {
             System.out.println("\nPriority Queue Operations\n");
             System.out.println("1. insert");
             System.out.println("2. remove");
-            System.out.println("3. check empty");
-            System.out.println("4. check full");
-            System.out.println("5. clear");
-            System.out.println("6. size");
+            System.out.println("3. display");
+            System.out.println("4. check empty");
+            System.out.println("5. check full");
+            System.out.println("6. clear");
+            System.out.println("7. size");
  
             int choice = scan.nextInt();            
             switch (choice) 
@@ -33,18 +34,22 @@ public class PriorityQueueTest {
                 break;                          
             case 2 : 
                 System.out.println("\nStudent removed \n\n"+ pq.remove()); 
-                break;        
+                break;
             case 3 : 
-                System.out.println("\nEmpty Status : "+ pq.isEmpty() );
+                System.out.println("\nStudent Display : ");
+                pq.display();
                 break; 
             case 4 : 
-                System.out.println("\nFull Status : "+ pq.isFull() );
+                System.out.println("\nEmpty Status : "+ pq.isEmpty() );
                 break; 
             case 5 : 
+                System.out.println("\nFull Status : "+ pq.isFull() );
+                break; 
+            case 6 : 
                 System.out.println("\nPriority Queue Cleared");
                 pq.clear();
                 break;    
-            case 6 : 
+            case 7 : 
                 System.out.println("\nSize = "+ pq.size() );
                 break;         
             default : 

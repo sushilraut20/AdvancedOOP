@@ -80,4 +80,21 @@ public class PriorityQueue {
  
         return student;
     }
+    
+    public void display()
+    {
+    		Student[] temp_array;
+    		int size = heapSize;
+    		temp_array = this.heap.clone();
+    		Student st;
+    		
+    		while(!(isEmpty())) 
+    		{
+    			st=remove();
+    			System.out.println(st.getName()+" "+st.getRedID());	
+    		}
+    		
+    		heapSize = size;
+    		this.heap = temp_array;
+    }
 }

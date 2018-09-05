@@ -15,6 +15,18 @@ public class Student {
 		this.gpa=gpa;
 		this.noOfUnitsTaken=noOfUnitsTaken;
 	}
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+	public String getRedID() {
+		return redID;
+	}
+
+
 
 	@Override
 	public String toString() {
