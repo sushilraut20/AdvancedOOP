@@ -5,7 +5,7 @@ public class PriorityQueue {
 	private Student[] heap;
 	private int heapSize, capacity;
 
-	public PriorityQueue() {
+	public PriorityQueue(int capacity) {
 		this.capacity=capacity + 1;
 		heap= new Student[this.capacity];
 		heapSize=0;
