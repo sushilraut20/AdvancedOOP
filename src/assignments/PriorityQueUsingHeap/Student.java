@@ -25,7 +25,21 @@ public class Student {
 	public String getRedID() {
 		return redID;
 	}
+	
+	
+	public String getEmailID() {
+		return emailID;
+	}
 
+
+	public float getGpa() {
+		return gpa;
+	}
+
+
+	public int getNoOfUnitsTaken() {
+		return noOfUnitsTaken;
+	}
 
 
 	@Override
@@ -34,8 +48,8 @@ public class Student {
 				+ ", noOfUnitsTaken=" + noOfUnitsTaken + "]";
 	}
 	
-	public float getPriorityOfStudent() {
-		return (float)(0.7*noOfUnitsTaken + 0.3*gpa);
+	public double getPriorityOfStudent() {
+		return (double)(0.7*noOfUnitsTaken + 0.3*gpa);
 	}
 
 }
